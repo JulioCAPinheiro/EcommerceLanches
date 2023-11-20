@@ -1,0 +1,30 @@
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\bin\Debug\net6.0\appsettings.json
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\bin\Debug\net6.0\Site em MVC.staticwebassets.runtime.json
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\bin\Debug\net6.0\Site em MVC.exe
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\bin\Debug\net6.0\Site em MVC.deps.json
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\bin\Debug\net6.0\Site em MVC.runtimeconfig.json
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\bin\Debug\net6.0\Site em MVC.dll
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\bin\Debug\net6.0\Site em MVC.pdb
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\Site em MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\Site em MVC.AssemblyInfoInputs.cache
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\Site em MVC.AssemblyInfo.cs
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\Site em MVC.csproj.CoreCompileInputs.cache
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\Site em MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\Site em MVC.RazorAssemblyInfo.cache
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\Site em MVC.RazorAssemblyInfo.cs
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\staticwebassets\msbuild.Site em MVC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\staticwebassets\msbuild.build.Site em MVC.props
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Site em MVC.props
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Site em MVC.props
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\scopedcss\bundle\Site em MVC.styles.css
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\scopedcss\projectbundle\Site em MVC.bundle.scp.css
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\Site em MVC.dll
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\refint\Site em MVC.dll
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\Site em MVC.pdb
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\Site em MVC.genruntimeconfig.cache
+C:\Users\juces\OneDrive\Documentos\C#\Site em MVC\Site em MVC\obj\Debug\net6.0\ref\Site em MVC.dll
