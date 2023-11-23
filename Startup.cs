@@ -1,5 +1,8 @@
 ﻿using Ecommerce.Context;
+using Ecommerce.Repositories;
+using Ecommerce.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace Site_em_MVC;
 public class Startup
@@ -16,6 +19,12 @@ public class Startup
     {
         //Definindo Serviço de Rota para o Banco de dados
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+        //Adicionando independences (CONTAINER DI)
+
+        services.AddTransient<ILanchesRepository, LanchesRepository>();
+        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+
         services.AddControllersWithViews();
     }
 
