@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Site em MVC.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Site em MVC.bundle.scp.css"
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Site_em_MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Site_em_MVC.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\css\\site.css",
@@ -257,20 +257,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Site em MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Site_em_MVC.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Site em MVC.props",
-      "PackagePath": "build\\Site em MVC.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Site_em_MVC.props",
+      "PackagePath": "build\\Site_em_MVC.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Site em MVC.props",
-      "PackagePath": "buildMultiTargeting\\Site em MVC.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Site_em_MVC.props",
+      "PackagePath": "buildMultiTargeting\\Site_em_MVC.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Site em MVC.props",
-      "PackagePath": "buildTransitive\\Site em MVC.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Site_em_MVC.props",
+      "PackagePath": "buildTransitive\\Site_em_MVC.props"
     }
   ],
   "ElementsToRemove": []

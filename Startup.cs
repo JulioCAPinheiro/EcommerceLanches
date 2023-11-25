@@ -1,4 +1,5 @@
 ﻿using Ecommerce.Context;
+using Ecommerce.Models;
 using Ecommerce.Repositories;
 using Ecommerce.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -24,6 +25,15 @@ public class Startup
 
         services.AddTransient<ILanchesRepository, LanchesRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+        services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
+
+        //Recupera uma extancia de sessãp HTTP
+        services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        // O Uso do Session e o Uso do HTTPContext foi feito para gerenciar o estado da sessão
+
+
+        services.AddMemoryCache();
+        services.AddSession();
 
         services.AddControllersWithViews();
     }
@@ -45,7 +55,7 @@ public class Startup
         app.UseStaticFiles();
 
         app.UseRouting();
-
+        app.UseSession();
         app.UseAuthorization();
 
         app.UseEndpoints(endpoints =>

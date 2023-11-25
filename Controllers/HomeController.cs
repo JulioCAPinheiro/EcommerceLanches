@@ -1,15 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Site_em_MVC.Models;
+using Ecommerce.Models;
 using System.Diagnostics;
+using Ecommerce.Repositories.Interfaces;
+using Ecommerce.ViewModels;
 
 namespace Site_em_MVC.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ILanchesRepository _lancheRepository;
+
+        public HomeController(ILanchesRepository lancheRepository)
+        {
+            _lancheRepository = lancheRepository;
+        }
 
         public IActionResult Index()
         {
-            return View();
+
+            var homeViewModel = new HomeViewModel
+            {
+                LanchesPreferidos = _lancheRepository.LanchesPreferido
+            };
+
+            return View(homeViewModel);
         }
 
 
