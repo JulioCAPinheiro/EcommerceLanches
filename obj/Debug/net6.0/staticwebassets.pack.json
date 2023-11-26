@@ -45,12 +45,20 @@
       "PackagePath": "staticwebassets\\images\\cart-5-16.ico"
     },
     {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\delete.png",
+      "PackagePath": "staticwebassets\\images\\delete.png"
+    },
+    {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\faleconosco1.jpg",
       "PackagePath": "staticwebassets\\images\\faleconosco1.jpg"
     },
     {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\phone-app-icon.png",
       "PackagePath": "staticwebassets\\images\\phone-app-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\remove.ico",
+      "PackagePath": "staticwebassets\\images\\remove.ico"
     },
     {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\js\\site.js",

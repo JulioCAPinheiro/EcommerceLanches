@@ -1,4 +1,5 @@
 ﻿using Ecommerce.Models;
+using Ecommerce.Repositories;
 using Ecommerce.Repositories.Interfaces;
 using Ecommerce.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -37,11 +38,12 @@ namespace Ecommerce.Controllers
                 {
                     return RedirectToAction("Index");
                 }*/
+                lanches = _lanchesRepository.Lanches.Where(l => l.Categoria.CategoriaNome.Equals(categoria)).OrderBy(l => l.Nome);
+
+                categoriaAtual = categoria;
             }
 
-            lanches = _lanchesRepository.Lanches.Where(l => l.Categoria.CategoriaNome.Equals(categoria)).OrderBy(l => l.Nome);
-
-            categoriaAtual = categoria;
+            
 
             var lanchesListViewModel = new LancheListViewModel
             {
@@ -53,9 +55,9 @@ namespace Ecommerce.Controllers
 
         }
 
-        public IActionResult Detail(int lancheId)
+        public IActionResult Details(int lancheId)
         {
-            var lanche = _lanchesRepository.Lanches.FirstOrDefault(localizaLanche => localizaLanche.LancheId == lancheId);
+            var lanche = _lanchesRepository.Lanches.FirstOrDefault(l => l.LancheId == lancheId);
             return View(lanche);
         }
     }

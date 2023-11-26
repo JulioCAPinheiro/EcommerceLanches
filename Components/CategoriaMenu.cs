@@ -1,7 +1,7 @@
 ﻿using Ecommerce.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Ecommerce.Components
+namespace LanchesMac.Components
 {
     public class CategoriaMenu : ViewComponent
     {
@@ -14,7 +14,7 @@ namespace Ecommerce.Components
 
         public IViewComponentResult Invoke()
         {
-            var categorias = _categoriaRepository.Categorias.OrderBy(p => p.CategoriaNome);
+            var categorias = _categoriaRepository.Categorias.OrderBy(c => c.CategoriaNome);
             return View(categorias);
         }
     }
