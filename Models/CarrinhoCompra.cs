@@ -24,13 +24,13 @@ namespace Ecommerce.Models
             //Obtem um serviço do tipo do nosso contexto
             var context = services.GetService<AppDbContext>();
 
-            //Obtem ou geral o Id do Carrinho
+            //Obtem ou gera o Id do Carrinho
             string carrinhoId = session.GetString("CarrinhoId") ?? Guid.NewGuid().ToString();
 
             //Atribui o Id do carrinho na Sessão
             session.SetString("CarrinhoId", carrinhoId);
 
-            //Retorna o carrinho com o contexto e oId atribuido ou obtido
+            //Retorna o carrinho com o contexto e o Id atribuido ou obtido
 
             return new CarrinhoCompra(context)
             {

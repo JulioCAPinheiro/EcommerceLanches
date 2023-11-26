@@ -12,7 +12,7 @@ namespace Ecommerce.Migrations
                + "VALUES('Normal', 'Lanche feito com ingredientes normais')");
 
             migrationBuilder.Sql("INSERT INTO Categorias(CategoriaNome, Descricao) "
-               + "VALUES('Normal', 'Lanche feito com ingredientes Naturais')");
+               + "VALUES('Natural', 'Lanche feito com ingredientes Naturais')");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Site_em_MVC.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Site_em_MVC.bundle.scp.css"
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Ecommerce.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Ecommerce.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\css\\site.css",
@@ -11,6 +11,22 @@
     {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\Envelope-icon24.png",
+      "PackagePath": "staticwebassets\\images\\Envelope-icon24.png"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\Full-Cart-icon.png",
+      "PackagePath": "staticwebassets\\images\\Full-Cart-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\HA.png",
+      "PackagePath": "staticwebassets\\images\\HA.png"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\Home-iconred.png",
+      "PackagePath": "staticwebassets\\images\\Home-iconred.png"
     },
     {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\X1.jpeg",
@@ -23,6 +39,18 @@
     {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\X3.jpeg",
       "PackagePath": "staticwebassets\\images\\X3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\cart-5-16.ico",
+      "PackagePath": "staticwebassets\\images\\cart-5-16.ico"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\faleconosco1.jpg",
+      "PackagePath": "staticwebassets\\images\\faleconosco1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\phone-app-icon.png",
+      "PackagePath": "staticwebassets\\images\\phone-app-icon.png"
     },
     {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\js\\site.js",
@@ -257,20 +285,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Site_em_MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Ecommerce.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Site_em_MVC.props",
-      "PackagePath": "build\\Site_em_MVC.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Ecommerce.props",
+      "PackagePath": "build\\Ecommerce.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Site_em_MVC.props",
-      "PackagePath": "buildMultiTargeting\\Site_em_MVC.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Ecommerce.props",
+      "PackagePath": "buildMultiTargeting\\Ecommerce.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Site_em_MVC.props",
-      "PackagePath": "buildTransitive\\Site_em_MVC.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Ecommerce.props",
+      "PackagePath": "buildTransitive\\Ecommerce.props"
     }
   ],
   "ElementsToRemove": []

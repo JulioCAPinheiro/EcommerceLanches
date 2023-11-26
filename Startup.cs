@@ -61,8 +61,18 @@ public class Startup
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllerRoute(
-                name: "default",
+                name:"categoriaFiltro",
+                pattern: "Lanche/{action}/{categoria?}",
+                defaults: new {Controller = "Lanche", Action = "List"}
+                );
+
+
+            endpoints.MapControllerRoute(
+                name: default,            
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+            /* Roteamendo Convencional 
+                  pattern: "{controller=Home}/{action=Index}/{id?}");
+                */
         });
     }
 }

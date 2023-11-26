@@ -10693,9 +10693,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\Site_em_MVC.csproj",
-      "projectName": "Site_em_MVC",
-      "projectPath": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\Site_em_MVC.csproj",
+      "projectUniqueName": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\Ecommerce.csproj",
+      "projectName": "Ecommerce",
+      "projectPath": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\Ecommerce.csproj",
       "packagesPath": "C:\\Users\\juces\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\obj\\",
       "projectStyle": "PackageReference",

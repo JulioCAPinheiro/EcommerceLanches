@@ -1,4 +1,5 @@
-﻿using Ecommerce.Repositories.Interfaces;
+﻿using Ecommerce.Models;
+using Ecommerce.Repositories.Interfaces;
 using Ecommerce.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,20 +14,49 @@ namespace Ecommerce.Controllers
             _lanchesRepository = lanchesRepository;
         }
 
-        public IActionResult List()
+        public IActionResult List(string categoria)
         {
-            /*
-            var lanches = _lanchesRepository.Lanches;
-            return View(lanches);
-            */
+            IEnumerable<Lanche> lanches;
+            string categoriaAtual = string.Empty;
 
-            var lanchesListViewModel = new LancheListViewModel();
+            if (string.IsNullOrEmpty(categoria))
+            {
+                lanches = _lanchesRepository.Lanches.OrderBy(l => l.LancheId);
+                categoriaAtual = "Todos os lanches";
+            }
+            else
+            {
+                /*
+                if (string.Equals("Normal", categoria, StringComparison.OrdinalIgnoreCase ) || string.Equals("Natural", categoria, StringComparison.OrdinalIgnoreCase))
+                {
+                    lanches = _lanchesRepository.Lanches
+                     .Where(l => l.Categoria.CategoriaNome.Equals(categoria, StringComparison.OrdinalIgnoreCase))
+                     .OrderBy(l => l.Nome);
+                }
+                else
+                {
+                    return RedirectToAction("Index");
+                }*/
+            }
 
-            lanchesListViewModel.Lanches = _lanchesRepository.Lanches;
-            lanchesListViewModel.CategoriAtual = "Categoria Atual";
+            lanches = _lanchesRepository.Lanches.Where(l => l.Categoria.CategoriaNome.Equals(categoria)).OrderBy(l => l.Nome);
+
+            categoriaAtual = categoria;
+
+            var lanchesListViewModel = new LancheListViewModel
+            {
+                Lanches = lanches,
+                CategoriAtual = categoriaAtual,
+            };
 
             return View(lanchesListViewModel);
 
+        }
+
+        public IActionResult Detail(int lancheId)
+        {
+            var lanche = _lanchesRepository.Lanches.FirstOrDefault(localizaLanche => localizaLanche.LancheId == lancheId);
+            return View(lanche);
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ik+ytR/jD8xymfZFlUphrFs2+XUIAA8nRS+wJt6vaWdBhIIZhSo1HrZw1Hbx2YnqJIUibwCNZKtCfBxosXDO5A==",
+  "dgSpecHash": "NMBTn1dPQxShZc7fdRLKc6JfwDgWQCAhzydBFs3PETXIttNWFVGuI9diTfg1W0tbxW1yb6thJGnRQGTEpOZ9rQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\Site_em_MVC.csproj",
+  "projectFilePath": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\Ecommerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\juces\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\juces\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
