@@ -21,10 +21,11 @@ public class Startup
         //Definindo Serviço de Rota para o Banco de dados
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-        //Adicionando independences (CONTAINER DI)
+        //Adicionando independencia (CONTAINER DI)
 
         services.AddTransient<ILanchesRepository, LanchesRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+        services.AddTransient<IPedidosRepository, PedidoRepository>();
         services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
 
         //Recupera uma extancia de sessãp HTTP
