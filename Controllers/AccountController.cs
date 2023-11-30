@@ -1,4 +1,5 @@
 ﻿using Ecommerce.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,11 +17,12 @@ namespace Ecommerce.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Login(string returnUrl)
         {
             return View(new LoginViewModel()
             {
-                ReturnUrl = returnUrl,
+                ReturnUrl = returnUrl
             });
         }
 
@@ -29,9 +31,9 @@ namespace Ecommerce.Controllers
         public async Task<IActionResult> Login(LoginViewModel loginVm)
         {
             if (!ModelState.IsValid)
-            { 
+            
                 return View(loginVm);
-            }
+            
 
             var user = await _userManager.FindByNameAsync(loginVm.UserName);
 
@@ -44,13 +46,47 @@ namespace Ecommerce.Controllers
                     {
                         return RedirectToAction("Index", "Home");
                     }
-                    return RedirectToAction(loginVm.ReturnUrl);
+                    return Redirect(loginVm.ReturnUrl);
                 }
             }
             ModelState.AddModelError("", "Falha ao realizar o login!!");
             return View(loginVm);
+        }
 
-           
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(LoginViewModel registroVM)
+        {
+            if(ModelState.IsValid)
+            {
+                var user = new IdentityUser { UserName = registroVM.UserName };
+                var result = await _userManager.CreateAsync(user, registroVM.Password);
+
+                if (result.Succeeded)
+                {
+                    await _signInManager.SignInAsync(user, isPersistent:false);
+                    return RedirectToAction("Login", "Account");
+                }
+                else
+                {
+                    this.ModelState.AddModelError("Registro", "Falha ao registrar o usuário");
+                }
+            }
+            return View(registroVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            HttpContext.Session.Clear();
+            HttpContext.User = null;
+            await _signInManager?.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

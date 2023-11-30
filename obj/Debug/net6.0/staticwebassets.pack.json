@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\images\\Home-iconred.png"
     },
     {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\Login.jpeg",
+      "PackagePath": "staticwebassets\\images\\Login.jpeg"
+    },
+    {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\X1.jpeg",
       "PackagePath": "staticwebassets\\images\\X1.jpeg"
     },

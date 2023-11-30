@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LNQr7piDRFjL3smZ2UHHb7hBVtQKC8jvrtdWgK3gNPU=",
+  "Hash": "9FzW28bZdoQvYemNuubyFX7dshOOTkFbe67VsMa2Ozc=",
   "Source": "Ecommerce",
   "BasePath": "_content/Ecommerce",
   "Mode": "Default",
@@ -224,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Home-iconred.png"
+    },
+    {
+      "Identity": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\Login.jpeg",
+      "SourceId": "Ecommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\",
+      "BasePath": "_content/Ecommerce",
+      "RelativePath": "images/Login.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Login.jpeg"
     },
     {
       "Identity": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Site em MVC\\wwwroot\\images\\phone-app-icon.png",

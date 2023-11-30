@@ -1,10 +1,12 @@
 ﻿using Ecommerce.Models;
 using Ecommerce.Repositories.Interfaces;
 using Ecommerce.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ecommerce.Controllers
 {
+    [Authorize]
     public class CarrinhoCompraController : Controller
     {
 
