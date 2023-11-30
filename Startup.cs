@@ -2,6 +2,7 @@
 using Ecommerce.Models;
 using Ecommerce.Repositories;
 using Ecommerce.Repositories.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -21,6 +22,7 @@ public class Startup
         //Definindo Serviço de Rota para o Banco de dados
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+        services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
         //Adicionando independencia (CONTAINER DI)
 
         services.AddTransient<ILanchesRepository, LanchesRepository>();
@@ -57,8 +59,9 @@ public class Startup
 
         app.UseRouting();
         app.UseSession();
+        app.UseAuthentication();
         app.UseAuthorization();
-
+        
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllerRoute(
