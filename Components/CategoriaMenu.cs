@@ -1,7 +1,7 @@
 ﻿using Ecommerce.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LanchesMac.Components
+namespace Ecommerce.Components
 {
     public class CategoriaMenu : ViewComponent
     {

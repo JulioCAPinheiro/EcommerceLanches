@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Ecommerce.Models
 {
@@ -19,7 +20,7 @@ namespace Ecommerce.Models
         [Required(ErrorMessage = "Informe o Endereço")]
         [StringLength(100)]
         [Display(Name = "Endereço")]
-
+        [JsonPropertyName("Logradouro")]
         public string Endereco { get; set; }
 
         [StringLength(100)]
@@ -29,12 +30,15 @@ namespace Ecommerce.Models
         [Required(ErrorMessage = "Informe o seu CEP")]
         [StringLength(10, MinimumLength = 8)]
         [Display(Name = "CEP")]
+        [JsonPropertyName("Cep")]
         public string Cep { get; set; }
 
         [StringLength(10)]
+        [JsonPropertyName("Localidade")]
         public string Estado { get; set; }
 
         [StringLength(50)]
+        [JsonPropertyName("Bairro")]
         public string Cidade { get; set; }
 
         [Required(ErrorMessage = "Informe o seu Telefone")]

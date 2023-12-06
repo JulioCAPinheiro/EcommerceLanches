@@ -4,7 +4,7 @@ using System.Diagnostics;
 using Ecommerce.Repositories.Interfaces;
 using Ecommerce.ViewModels;
 
-namespace Site_em_MVC.Controllers
+namespace Ecommerce.Controllers
 {
     public class HomeController : Controller
     {

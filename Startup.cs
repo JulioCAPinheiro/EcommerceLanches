@@ -2,11 +2,13 @@
 using Ecommerce.Models;
 using Ecommerce.Repositories;
 using Ecommerce.Repositories.Interfaces;
+using Ecommerce.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Site_em_MVC;
+
+namespace Ecommerce;
 public class Startup
 {
     public Startup(IConfiguration configuration)
@@ -29,6 +31,15 @@ public class Startup
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddTransient<IPedidosRepository, PedidoRepository>();
         services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
+        services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
+
+        services.AddAuthorization(options =>
+        {
+            options.AddPolicy("Admin", politica =>
+            {
+                politica.RequireRole("Admin");
+            });
+        });
 
         //Recupera uma extancia de sessãp HTTP
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -42,7 +53,7 @@ public class Startup
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ISeedUserRoleInitial seedUserRoleInitial)
     {
         if (env.IsDevelopment())
         {
@@ -58,21 +69,29 @@ public class Startup
         app.UseStaticFiles();
 
         app.UseRouting();
+        //Cria o perfil
+        seedUserRoleInitial.SeedRoles();
+        //Cria o usuário e atribui ao perfil
+        seedUserRoleInitial.SeedUsers();
         app.UseSession();
         app.UseAuthentication();
         app.UseAuthorization();
-        
+
         app.UseEndpoints(endpoints =>
         {
+
             endpoints.MapControllerRoute(
-                name:"categoriaFiltro",
+                name: "areas",
+                pattern: "{area:exists}/{controller=admin}/{action=Index}/{id?}");
+
+            endpoints.MapControllerRoute(
+                name: "categoriaFiltro",
                 pattern: "Lanche/{action}/{categoria?}",
-                defaults: new {Controller = "Lanche", Action = "List"}
-                );
+                defaults: new { Controller = "Lanche", Action = "List" });
 
 
             endpoints.MapControllerRoute(
-                name: default,            
+                name: default,
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             /* Roteamendo Convencional 
                   pattern: "{controller=Home}/{action=Index}/{id?}");

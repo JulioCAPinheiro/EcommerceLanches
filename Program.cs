@@ -1,5 +1,5 @@
 
-namespace Site_em_MVC;
+namespace Ecommerce;
 
 public class Program
 {
@@ -12,4 +12,9 @@ public class Program
         {
             webBuider.UseStartup<Startup>();
         });
+
+
+
+
+    
 }
