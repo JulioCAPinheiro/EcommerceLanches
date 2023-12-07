@@ -12,9 +12,10 @@ namespace Ecommerce.Models
 
         [Required(ErrorMessage = "O nome do lanche deve ser informado")]
         [Display(Name = "Nome do lanche")]
-        [StringLength(80, MinimumLength = 10, ErrorMessage = "O {0} deve ter no mínomo {1} e no maximo {10} Caracteres")]
+        [StringLength(80, MinimumLength = 10, ErrorMessage = "O {0} deve ter no mínomo {1} e no maximo {2} Caracteres")]
         public string Nome { get; set; }
 
+       
         [Required(ErrorMessage = "A descrição deve ser preenchida")]
         [Display(Name = "Descrição do Lanche")]
         [MinLength(20, ErrorMessage = "Descrição deve ter no mínimo {1} caracteres")]
