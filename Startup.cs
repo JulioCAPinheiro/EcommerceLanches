@@ -1,10 +1,12 @@
-﻿using Ecommerce.Context;
+﻿using Ecommerce.Areas.Admin.Services;
+using Ecommerce.Context;
 using Ecommerce.Models;
 using Ecommerce.Repositories;
 using Ecommerce.Repositories.Interfaces;
 using Ecommerce.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using ReflectionIT.Mvc.Paging;
 
 
 
@@ -33,6 +35,14 @@ public class Startup
         services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
         services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
 
+        services.AddScoped<RelatorioVendasServices>();
+
+        services.AddPaging(options =>
+        {
+            options.ViewName = "Bootstrap4";
+            options.PageParameterName = "pageindex";
+        });
+
         services.AddAuthorization(options =>
         {
             options.AddPolicy("Admin", politica =>
@@ -40,6 +50,7 @@ public class Startup
                 politica.RequireRole("Admin");
             });
         });
+
 
         //Recupera uma extancia de sessãp HTTP
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

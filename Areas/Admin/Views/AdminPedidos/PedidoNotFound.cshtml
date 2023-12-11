@@ -1,0 +1,17 @@
+﻿@model int
+
+<div class="alert alert-danger mt-1 mb-1">
+    <h1>
+        Erro 404 - Not Found
+    </h1>
+    <hr />
+
+    <h2>
+        Pedido com o Id = @Model Não foi encontrado
+    </h2>
+
+</div>
+
+<a asp-action="Index" asp-controller="AdminsPedidos" class="btn btn-outline-success">
+    <h2>Retornar para a lista de pedidos</h2>
+</a>
