@@ -1,5 +1,4 @@
 ﻿using Ecommerce.Models;
-using Ecommerce.Repositories;
 using Ecommerce.Repositories.Interfaces;
 using Ecommerce.ViewModels;
 using Microsoft.AspNetCore.Mvc;

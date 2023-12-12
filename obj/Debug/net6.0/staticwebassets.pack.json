@@ -73,12 +73,32 @@
       "PackagePath": "staticwebassets\\images\\phone-app-icon.png"
     },
     {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Ecommerce\\wwwroot\\images\\produtos\\Banana.jpg",
+      "PackagePath": "staticwebassets\\images\\produtos\\Banana.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Ecommerce\\wwwroot\\images\\produtos\\Portuguesa.jpg",
+      "PackagePath": "staticwebassets\\images\\produtos\\Portuguesa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Ecommerce\\wwwroot\\images\\produtos\\pizza-mussarela.jpg",
+      "PackagePath": "staticwebassets\\images\\produtos\\pizza-mussarela.jpg"
+    },
+    {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Ecommerce\\wwwroot\\images\\registro1.jpg",
       "PackagePath": "staticwebassets\\images\\registro1.jpg"
     },
     {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Ecommerce\\wwwroot\\images\\remove.ico",
       "PackagePath": "staticwebassets\\images\\remove.ico"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Ecommerce\\wwwroot\\images\\upload2.png",
+      "PackagePath": "staticwebassets\\images\\upload2.png"
+    },
+    {
+      "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Ecommerce\\wwwroot\\images\\visualizar1.jpg",
+      "PackagePath": "staticwebassets\\images\\visualizar1.jpg"
     },
     {
       "Id": "C:\\Users\\juces\\OneDrive\\Documentos\\C#\\Site em MVC\\Ecommerce\\wwwroot\\js\\site.js",

@@ -12,9 +12,4 @@ public class Program
         {
             webBuider.UseStartup<Startup>();
         });
-
-
-
-
-    
 }
